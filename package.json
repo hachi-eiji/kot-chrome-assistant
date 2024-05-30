@@ -7,6 +7,7 @@
   },
   "scripts": {
     "zip": "zip -r kot-chrome-assistant.zip . -x *.git* -x docs/**/* -x *.zip -x .all-contributorsrc -x test/**/*",
+    "clean": "rm -rf dist/ && mkdir dist && touch dist/.gitkeep",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate"
   },
