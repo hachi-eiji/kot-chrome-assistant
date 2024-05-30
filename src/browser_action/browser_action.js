@@ -1,13 +1,14 @@
-let myrecUrl = "https://s2.ta.kingoftime.jp/independent/recorder/personal/";
+let myrecUrl = "https://kintaiplus.freee.co.jp/independent/recorder/personal/";
 
 const replaceMyrecToNeed = () => {
   chrome.storage.sync.get(["s3Selected", "samlSelected"], (items) => {
     const iframe = document.querySelector("#myrec iframe");
     if (iframe && (items.s3Selected || items.samlSelected)) {
-      const subdomain = !items.s3Selected ? "s2" : "s3";
-      const recorder = !items.samlSelected ? "recorder" : "recorder2"
+      // 使わない
+      // const subdomain = !items.s3Selected ? "s2" : "s3";
+      // const recorder = !items.samlSelected ? "recorder" : "recorder2"
 
-      myrecUrl = `https://${subdomain}.ta.kingoftime.jp/independent/${recorder}/personal/`;
+      myrecUrl = `https://kintaiplus.freee.co.jp/independent/recorder/personal/`;
       iframe.src = myrecUrl;
     }
   });

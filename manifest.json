@@ -31,20 +31,16 @@
     }]
   },
   "host_permissions": [
-    "https://s2.ta.kingoftime.jp/independent/recorder/personal/*",
-    "https://s3.ta.kingoftime.jp/independent/recorder/personal/*",
-    "https://s2.ta.kingoftime.jp/independent/recorder2/personal/*",
-    "https://s3.ta.kingoftime.jp/independent/recorder2/personal/*",
+    "https://kintaiplus.freee.co.jp/independent/recorder/personal/*",
+    "https://kintaiplus.freee.co.jp/independent/recorder2/personal/*",
     "https://slack.com/api/*",
     "https://hooks.slack.com/services/*"
   ],
   "content_scripts": [
     {
       "matches": [
-        "https://s2.ta.kingoftime.jp/independent/recorder/personal/*",
-        "https://s3.ta.kingoftime.jp/independent/recorder/personal/*",
-        "https://s2.ta.kingoftime.jp/independent/recorder2/personal/*",
-        "https://s3.ta.kingoftime.jp/independent/recorder2/personal/*"
+        "https://kintaiplus.freee.co.jp/independent/recorder/personal/*",
+        "https://kintaiplus.freee.co.jp/independent/recorder2/personal/*"
       ],
       "js": [
         "src/inject/inject.js"
