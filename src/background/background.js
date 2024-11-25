@@ -66,17 +66,17 @@ chrome.runtime.onStartup.addListener(function () {
 });
 
 chrome.action.onClicked.addListener(function () {
-  let myrecUrl = "https://s2.ta.kingoftime.jp/independent/recorder/personal/";
+  let myrecUrl = "https://kintaiplus.freee.co.jp/independent/recorder/personal/";
 
   chrome.storage.sync.get(["openInNewTab", "s3Selected", "samlSelected"], (items) => {
     setPopup(!items.openInNewTab);
 
     if (items.openInNewTab) {
       if (items.s3Selected || items.samlSelected) {
-        const subdomain = !items.s3Selected ? "s2" : "s3";
-        const recorder = !items.samlSelected ? "recorder" : "recorder2"
+        // const subdomain = !items.s3Selected ? "s2" : "s3";
+        // const recorder = !items.samlSelected ? "recorder" : "recorder2"
 
-        myrecUrl = `https://${subdomain}.ta.kingoftime.jp/independent/${recorder}/personal/`;
+        myrecUrl = `https://kintaiplus.freee.co.jp/independent/recorder/personal/`;
 
       }
       chrome.tabs.query({ url: myrecUrl, currentWindow: true }, function (tabs) {
