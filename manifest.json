@@ -15,13 +15,13 @@
   },
   "action": {
     "default_icon": "icons/icon19.png",
-    "default_title": "勤怠管理Plusアシスト",
-    "default_popup": "src/browser_action/browser_action.html"
+    "default_title": "勤怠管理Plusアシスト"
   },
   "permissions": [
     "storage",
     "declarativeNetRequest",
-    "declarativeNetRequestFeedback"
+    "declarativeNetRequestFeedback",
+    "tabs"
   ],
   "declarative_net_request": {
     "rule_resources": [{
