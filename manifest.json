@@ -1,7 +1,7 @@
 {
   "name": "freee 勤怠管理 Plus Chromeアシスタント",
   "short_name": "勤怠管理Plusアシスト",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "manifest_version": 3,
   "description": "勤怠管理システム「freee 勤怠管理 Plus」を快適に使えるようにするための拡張機能です。",
   "icons": {
