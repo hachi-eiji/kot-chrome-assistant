@@ -73,6 +73,13 @@
           clockOutButtonId = buttons.filter(b => b.mark === '2')[0].id,
           breakButtons = buttons.filter(b => b.mark === '0');
 
+
+    const timecard = document.getElementById('menu').children[0];
+    timecard.addEventListener('click', (e)=>{
+      e.preventDefault();
+      window.open(window.location, '_blank');
+    })
+
     if (slackEnabled || slackStatusEnabled) {
       document.getElementById('record_' + clockInButtonId).addEventListener('click', clockIn, false);
       document.getElementById('record_' + clockOutButtonId).addEventListener('click', clockOut, false);
